@@ -6,6 +6,6 @@ export interface Command{
 }
 interface CommandHelp{
     name:string;
-    code:string;
     usage:string;
+    description:string;
 }
