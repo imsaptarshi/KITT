@@ -5,6 +5,12 @@ import dotenv from "dotenv";
 if (!process.env.BOT_TOKEN) {
     dotenv.config({ path: __dirname + "/.env" });
 }
+import express from "express";
+
+const app:express = express();
+const port = 3000;
+app.get('/', (req:any, res:any) => res.send('Hello World!'));
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 
 export const client: Discord.Client = new Discord.Client();
 
