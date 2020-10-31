@@ -31,7 +31,7 @@ const SetMode:Command={
             message.reply(embed);
         }
         else if (message.content.split(" ")[1] === undefined) {
-            message.reply(`mode cannot be left blank, refer to ${DefaultSettings.prefix}help setmode`);
+            message.reply(`mode cannot be left blank, refer to \`${DefaultSettings.prefix}help setmode\``);
         }
         else{
             message.reply("Seems like you don't have the right permissions to use this command.\n*for now its only enabled for bot owner*");

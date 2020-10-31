@@ -24,7 +24,7 @@ const SetPrefix: Command = {
             message.reply(embed);
         }
         else if (message.content.split(" ")[1] === undefined) {
-            message.reply(`prefix cannot be blank, refer to ${DefaultSettings.prefix}help setprefix`);
+            message.reply(`prefix cannot be blank, refer to \`${DefaultSettings.prefix}help setprefix\``);
         }
         else {
             message.reply("Seems like you don't have the right permissions to use this command.\n*for now its only enabled for bot owner*");

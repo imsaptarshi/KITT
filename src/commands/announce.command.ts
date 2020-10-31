@@ -25,7 +25,7 @@ const Announce: Command = {
         });
       }
       else{
-        message.reply(`Announcement couldn't be blank, refer to ${DefaultSettings.prefix}help announce`);
+        message.reply(`Announcement couldn't be blank, refer to \`${DefaultSettings.prefix}help announce\``);
       }
     }
 }
