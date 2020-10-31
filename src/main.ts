@@ -14,13 +14,13 @@ app.listen(port, () => console.log(`KITT listening at http://localhost:${port}`)
 
 export const client: Discord.Client = new Discord.Client();
 
-client.user?.setActivity(
+client.on("message", (message: Discord.Message) => {
+    client.user?.setActivity(
         DefaultSettings.activity.activity_name,
         ({
             type: DefaultSettings.activity.activity_type
         }))
 
-client.on("message", (message: Discord.Message) => {
     if (!message.content.startsWith(DefaultSettings.prefix)) return
 
     const cmd: string = ((message.content.slice(DefaultSettings.prefix.length)).split(" "))[0];
