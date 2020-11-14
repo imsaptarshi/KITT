@@ -15,7 +15,7 @@ export interface Activity {
     activity_type: ActivityTypes;
 }
 export interface Settings {
-    prefix: string;
+    prefix: any;
     servers: number;
     mode: Modes;
     activity: Activity;

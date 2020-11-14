@@ -18,6 +18,7 @@ const Help: Command = {
                 CommandName = require(`./${params}.command`);
             }
             catch (e) {
+                message.reply("The command doesn't exist or is not enabled.\nTry checking for typos if you're sure that exists");
                 console.log("Command not available");
                 return
             }

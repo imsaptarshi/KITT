@@ -15,7 +15,7 @@
       "declarationDir": "./root",
       "resolveJsonModule": true,
       "outDir": "./root",
-      "rootDir": "./src",
+      "rootDir": ".",
       "typeRoots": ["node_modules/@types"]
     },
     "include": ["./**/*.ts"],
